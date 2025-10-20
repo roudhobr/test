@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Untuk Kamu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="index.html" class="link">Kembali</a>
+    <h1 class="brand">Untuk Kamu</h1>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <img src="images/foto-profil.jpg" alt="Foto Pacar" class="profile" />
+      <div class="texts">
+        <h2>Hai, kamu</h2>
+        <p class="romantic">Kamu membuat hari saya lebih berwarna. Senyummu itu.. paket lengkap bahagia.</p>
+        <p class="funny">Kamu mirip kopi. Bikin melek tapi kadang manisnya kebangetan.</p>
+      </div>
+    </section>
+
+    <section class="message-box">
+      <h3>Tulis pesan untuk saya</h3>
+      <form id="contactForm" action="https://formspree.io/f/xkgqeyyb" method="POST">
+        <label for="message" class="sr-only">Pesan</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tulis pesanmu di sini" required></textarea>
+
+        <input type="hidden" name="_subject" value="Pesan dari website untukmu" />
+        <button type="submit" class="btn-primary">Kirim</button>
+      </form>
+      <p class="note">Pesan akan dikirim ke email Anda.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
